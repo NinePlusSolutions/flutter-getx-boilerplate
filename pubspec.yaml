@@ -1,0 +1,54 @@
+name: flutter_getx_base
+description: A new Flutter project.
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.2 <4.0.0"
+
+dependencies:
+  animate_do: ^3.0.2
+  awesome_dialog: ^3.1.0
+  cached_network_image: ^3.2.3
+  cupertino_icons: ^1.0.5
+  dio: ^5.3.0
+  flutter:
+    sdk: flutter
+  flutter_easyloading: ^3.0.5
+  flutter_svg: ^2.0.0
+  fluttertoast: ^8.0.9
+  freezed: ^2.3.2
+  freezed_annotation: 2.2.0
+  get: ^4.6.5
+  intl: ^0.18.1
+  intl_phone_field: ^3.2.0
+  loading_animation_widget: ^1.2.0+4
+  permission_handler: ^10.4.3
+  photo_view: ^0.14.0
+  shared_preferences: ^2.0.15
+
+dev_dependencies:
+  build_runner: ^2.1.7
+  flutter_test:
+    sdk: flutter
+  json_serializable: ^6.6.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/svgs/
+    - assets/icons/
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/InterSemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/InterMedium.ttf
+          weight: 500
+        - asset: assets/fonts/InterRegular.ttf
+          weight: 400
+        - asset: assets/fonts/InterBold.ttf
+          weight: 700
