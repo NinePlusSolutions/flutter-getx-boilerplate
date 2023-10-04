@@ -40,6 +40,13 @@ cd project
 
 # Install dependencies
 flutter pub get
+
+# Install Generation File
+flutter pub run build_runner build --delete-conflicting-outputs
+
+# Run Project
+flutter run
+
 ```
 
 ## Usage
