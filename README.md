@@ -84,23 +84,101 @@ class MyApp extends StatelessWidget {
 Describe the structure of your project, including the organization of folders and key files. For example:
 
 ```
-├── lib/
-│   ├── main.dart
-│   ├── screens/
-│   │   ├── home_screen.dart
-│   │   ├── settings_screen.dart
-│   │   └── ...
-│   ├── components/
-│   │   ├── common_button.dart
-│   │   ├── common_textfield.dart
-│   │   └── ...
-│   ├── localization/
-│   │   ├── en_US.json
-│   │   ├── es_ES.json
-│   │   └── ...
-│   └── ...
-├── pubspec.yaml
-└── ...
+lib/
+├── api
+│   ├── api.dart
+│   ├── api_constants.dart
+│   ├── api_provider.dart
+│   ├── api_repository.dart
+│   ├── base_provider.dart
+│   └── interceptors
+│       ├── auth_interceptor.dart
+│       ├── request_interceptor.dart
+│       └── response_interceptor.dart
+├── app_binding.dart
+├── app_controller.dart
+├── di.dart
+├── lang
+│   ├── lang.dart
+│   ├── language.dart
+│   ├── translation_service.dart
+│   └── value
+│       ├── en_US.dart
+│       └── vi_VN.dart
+├── main.dart
+├── main_common.dart
+├── main_development.dart
+├── main_production.dart
+├── models
+│   ├── mock
+│   ├── models.dart
+│   ├── request
+│   │   └── auth_request
+│   │       └── login_request
+│   │           ├── login_request.dart
+│   │           └── login_request.g.dart
+│   └── response
+│       ├── base_response.dart
+│       ├── base_response.g.dart
+│       ├── error_response.dart
+│       ├── error_response.g.dart
+│       ├── login_response.dart
+│       └── login_response.g.dart
+├── modules
+│   ├── auth
+│   │   ├── auth.dart
+│   │   ├── auth_binding.dart
+│   │   ├── ...
+│   ├── main
+│   │   ├── components
+│   │   │   └── tabIcon_data.dart
+│   │   ├── home_binding.dart
+│   │   ├── home_controller.dart
+│   │   ├── home_screen.dart
+│   │   └── tabs
+│   │       └── tabs.dart
+│   └── splash
+│       ├── splash.dart
+│       ├── splash_binding.dart
+│       ├── splash_controller.dart
+│       └── splash_view.dart
+├── routes
+│   ├── app_pages.dart
+│   ├── app_routes.dart
+│   └── routes.dart
+├── shared
+│   ├── constants
+│   │   ├── api_response_key.dart
+│   │   ├── colors.dart
+│   │   ├── common.dart
+│   │   ├── constant_date_time_define_format.dart
+│   │   ├── constants.dart
+│   │   ├── environmental_attribute.dart
+│   │   ├── image_constant.dart
+│   │   ├── r.dart
+│   │   └── storage.dart
+│   ├── services
+│   │   ├── services.dart
+│   │   └── storage_service.dart
+│   ├── shared.dart
+│   ├── utils
+│   │   ├── app_decoration.dart
+│   │   ├── app_flavor_helper.dart
+│   │   ├── date_time_utils.dart
+│   │   ├── focus.dart
+│   │   ├── ...
+│   └── widgets
+│       ├── app_bar_customize
+│       │   ├── appbar_iconbutton.dart
+│       │   ├── appbar_image.dart
+│       │   └── appbar_title.dart
+│       ├── app_check_box.dart
+│       ├── ...
+└── theme
+    ├── app_decoration.dart
+    ├── theme.dart
+    ├── theme_data.dart
+    └── theme_helper.dart
 ```
 
 ## Contributing
